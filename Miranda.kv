@@ -1,0 +1,42 @@
+<MirandaWidget>:
+	orientation: 'vertical'
+
+	Graph:
+		id: graph_plot
+		xlabel: 'X'
+		ylabel: 'Y'
+		#x_ticks_minor: 1
+		x_ticks_major: 5
+		y_ticks_major: 5
+		y_grid_label: True
+		x_grid_label: True
+		padding: 5
+		#x_grid: True
+		#y_grid: True
+		#xmin: -0
+		#xmax: 20
+		#ymin: 660
+		#ymax: 700
+
+	Graph:
+		id: stoch_plot
+		#xlabel: 'Stochastic Oscillator'
+		ylabel: '%K'
+		#x_ticks_minor: 1
+		#x_ticks_major: 5
+		y_ticks_major: 0.2
+		y_ticks_minor: 0.1
+		y_grid_label: True
+		x_grid_label: False
+		padding: 5
+		#x_grid: True
+		y_grid: False
+		xmin: -0
+		ymin: 0
+		ymax: 1
+		size_hint_y: .3
+
+	Button:
+		text: 'Click Me'
+		size_hint_y: None
+		height: 40
