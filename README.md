@@ -4,6 +4,10 @@
 
 Miranda is a Bitcoin price monitoring and trading bot written in python.  Prices will be retreived real time via websockets from exchanges that provide them and stored in a local database (MongoDB).  The front end is in Kivy and uses the graph module from the Kivy Garden.  Currently the goal is to use tick charts instead of typical time series data used in most trading software.  The reason for tick charts is they seem to fit bitcoin's market better (opinion, not advice, we'll see how it works out).  
 
+Requirements:
+- PyMongo, local instance of mongod running (start script in /utils)
+
+
 Targeted Exchanges:
 Currently using GDAX and Bitfinex for data.  Working on adding OKCoin but their data has been a bit sketchy, most likely an issue with the way the websocket calls are currently implemented in Miranda.
 
